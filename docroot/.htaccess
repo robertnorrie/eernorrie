@@ -141,3 +141,12 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
+
+<IfModule mod_setenvif.c>
+  SetEnvIf AH_CLIENT_IP ^10\.0\.1\.3 DENY=1
+  SetEnvIf AH_CLIENT_IP ^10\.0\.1\.4 DENY=1
+  SetEnvIf AH_CLIENT_IP ^10\.0\.1\.5 DENY=1
+  Order allow,deny
+  Allow From All
+  Deny from env=DENY
+</IfModule>
