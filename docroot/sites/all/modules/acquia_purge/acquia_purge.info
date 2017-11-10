@@ -25,9 +25,9 @@ files[] = queue/AcquiaPurgeQueueInterface.php
 files[] = queue/backend/AcquiaPurgeEfficientQueue.php
 files[] = queue/backend/AcquiaPurgeSmartQueue.php
 
-; Information added by Drupal.org packaging script on 2015-07-06
-version = "7.x-1.2"
+; Information added by Drupal.org packaging script on 2015-07-09
+version = "7.x-1.3"
 core = "7.x"
 project = "acquia_purge"
-datestamp = "1436188740"
+datestamp = "1436439312"
 
